@@ -1,0 +1,27 @@
+Task 9. Automate Modeling with the Data Science Agent
+Now, you'll explore a powerful, alternative workflow. Instead of writing code manually, you will use the integrated Data Science Agent to automatically generate a complete clustering model workflow from a single, natural language prompt.
+
+Follow these steps to generate and run the model using the agent:
+
+In the BigQuery Studio pane, click the dropdown arrow button, hover over Notebook, and then select Empty Notebook. This ensures the agent's code doesn't interfere with your original lab notebook.
+Open new notebook
+
+The Data Science Agent chat interface opens at the bottom of the notebook. Click the Move to panel button to pin the chat to the right side.
+Open new notebook
+
+Begin to type @listing_multimodal in the chat pane and Click the table. This explicitly sets the listings_multmodal table as context.
+Add table context to agent
+
+Copy the prompt below and enter it into the Agent Chat box. Afterward, Click Send to submit the prompt to the Agent.
+
+Use the selected table to generate a k-means clustering model with 3 clusters for housing listings. Then, help me understand the characteristics of each cluster so I can market to them as a real estate professional. Use Python.
+Copied!
+Give Agent prompt and submit
+
+The agent will think and formulate a plan. If you are okay with this plan, click Accept & Run. The Agent will generate Python code in one or more new cells.
+Accept Agent plan
+
+The Agent asks you to Accept & Run each block of code it generates. This keeps a human-in-the-loop. Feel free to review or edit the code and continue through each of the steps until you finish.
+Run agent code
+
+Once you are finished, simply close this new notebook tab and return to the original ai-assisted-data-science.ipynb tab to continue with the final section of the lab.

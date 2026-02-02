@@ -1,0 +1,4 @@
+Task 6. Model Evaluation and Prediction
+After training your model, the next step is to understand the clusters it created. Here, you use BigQuery Machine Learning functions like ML.EVALUATE and ML.CENTROIDS to analyze the model's quality and the defining characteristics of each segment.
+
+You then use ML.PREDICT to assign each house to a cluster. By running this query with the %%bigquery df magic command, you store the results in a pandas DataFrame named df. This makes the data immediately available for the subsequent Python steps. This highlights the interoperability between SQL and Python in Colab.

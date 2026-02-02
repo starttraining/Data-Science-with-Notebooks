@@ -1,0 +1,15 @@
+With your newly enriched dataset, you are ready to build a machine learning model. Your goal is to segment the house listings into distinct groups, and you do this by training a K-means clustering model directly in BigQuery using BQML. As part of this single step, you also register the model in the Vertex AI Model Registry, making it instantly available within the broader MLOps ecosystem on Google Cloud.
+
+To confirm your model was successfully registered, you can find it in the Vertex AI Model Registry by following these steps:
+
+In the Google Cloud Console, click the Navigation menu (☰) in the top-left corner.
+Scroll down to the Vertex AI section and click on Model Registry. You will now see your BQML model listed alongside all your other custom models.
+Navigate to Model Registry
+
+In the list of models, find the model named housing_clustering. You could take the next step to Deploy to an endpoint, which would make your model available for real-time, online predictions outside of the BigQuery environment.
+Navigate to Model Registry
+
+After exploring the Model Registry, you can return to your Colab notebook in BigQuery with these steps:
+
+In the Navigation menu (☰), navigate to BigQuery > Studio.
+Expand the menus in the Explore pane to find your notebook and open it.

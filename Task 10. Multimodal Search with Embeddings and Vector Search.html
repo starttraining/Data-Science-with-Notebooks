@@ -1,0 +1,8 @@
+Task 10. Multimodal Search with Embeddings and Vector Search
+In this final section, you implement multimodal search directly within BigQuery. This allows for intuitive searches, like finding houses based on a text description or finding homes that look similar to a sample picture.
+
+The process works by first converting each house image into a numerical representation called an embedding. An embedding captures the semantic meaning of an image, allowing you to find similar items by comparing their numerical vectors.
+
+You'll use the multimodalembedding model to generate these vectors for all your listings. After creating a vector index to accelerate lookups, you then perform two types of similarity search: text-to-image (finding houses that match a description) and image-to-image (finding houses that look like a sample image).
+
+Cleaning Up
